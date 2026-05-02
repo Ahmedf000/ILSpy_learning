@@ -97,7 +97,35 @@ As you keep tracing for More IOC you can find more for example which in this exa
 
 
 
-Please the tools for Deobfuscation I have found, you can set your Analysis Env for these and save these new snapshot.  (IK IK i haven't used even half but getting my hands
+**Finding the C2 IP/Domain**
+*Method 1 — Search string literals*
+Ctrl+Shift+F → change type dropdown to "String" → search:
+  http
+  :// 
+  .com
+  .net
+  192.168
+  10.0
+  port
+
+  
+*Method 2 — Find the connection setup*
+From the left panel, right-click DoClientReconnect → Analyze → Used By → trace back to where the TCP connection is initialized. 
+The IP/host will be hardcoded or constructed there.
+
+
+
+*Method 3 — Look for config classes*
+Ctrl+Shift+F → search:  Settings
+                         Config  
+                         Host
+                         Address
+                         ServerHost
+                         ClientHost
+
+
+
+Please see the tools for Deobfuscation I have found, you can set your Analysis Env for these and save these new snapshot.  (IK IK i haven't used even half but getting my hands
 on multiple ones at least helps me with this garbage)
 
 

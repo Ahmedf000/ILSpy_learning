@@ -97,7 +97,10 @@ As you keep tracing for More IOC you can find more for example which in this exa
 
 
 
+
+
 **Finding the C2 IP/Domain**
+
 *Method 1 — Search string literals*
 Ctrl+Shift+F → change type dropdown to "String" → search:
   http
@@ -147,7 +150,6 @@ InvisibleNet Unpacker	For .NET samples packed with InvisibleNet
 
 
   **Tier 3 — Dynamic Dumping (when static fails)**
-Tool	What it does
 ExtremeDumper	Dumps .NET assemblies from memory at runtime — catches unpackers mid-execution
 MegaDumper	Similar to ExtremeDumper, different hook approach
 hollows_hunter	Detects and dumps hollowed/injected processes

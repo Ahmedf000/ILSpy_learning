@@ -173,14 +173,9 @@ dotPeek (JetBrains)	Another decompiler — sometimes succeeds where ILSpy fails
 JustDecompile (Telerik)	Free, sometimes handles edge cases differently
 ILDasm	Microsoft's own IL disassembler — ships with .NET SDK, ground truth
 PEview / PE-bear	Raw PE structure — find embedded payloads in sections
-Wireshark	Capture the actual C2 traffic — now you know it's protobuf, you can parse it
+Wireshark	Capture the actual C2 traffic 
 
 
-
-  **Tier 6 — For Your Specific Sample (PUA Unicode)**
-dnSpyEx debugger	Set a breakpoint on Serializer.Serialize — inspect packet at runtime to see actual C2 data
-Fakenet-NG	Fake network services — let the malware "connect" and capture what it sends
-WireShark + protobuf decoder	Capture traffic, decode protobuf bytes into readable fields
 
 
 
